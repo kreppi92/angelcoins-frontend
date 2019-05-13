@@ -45,7 +45,7 @@ import { Line } from "react-chartjs-2";
 import { simpleAction } from '../actions/simpleAction';
 
 
-const API_ENDPOINT = process.env.NODE_ENV === 'production' ? "https://angelcoins-backend-rvu6mz.turbo360-vertex.com" : "http://localhost:3000";
+const API_ENDPOINT = process.env.NODE_ENV === 'production' ? "https://cors-anywhere.herokuapp.com/https://angelcoins-backend-rvu6mz.turbo360-vertex.com" : "http://localhost:3000";
 
 
 const styles = theme => ({
