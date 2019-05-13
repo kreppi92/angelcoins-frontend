@@ -44,6 +44,10 @@ import { Line } from "react-chartjs-2";
 
 import { simpleAction } from '../actions/simpleAction';
 
+
+const API_ENDPOINT = process.env.NODE_ENV === 'production' ? "https://angelcoins-backend.herokuapp.com" : "http://localhost:3000";
+
+
 const styles = theme => ({
   root: {
     flexGrow: 1,
@@ -129,7 +133,7 @@ class App extends Component {
   };
 
   componentDidMount = async () => {
-    const data = await axios.get('http://localhost:3000/api/company')
+    const data = await axios.get(`${API_ENDPOINT}/api/company`)
     console.log(data.data)
     this.setState({ loadedCompanies: data.data.data })
   }
