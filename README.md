@@ -21,6 +21,8 @@ BACKEND API ENDPOINT DEMO: https://angelcoins-backend-rvu6mz.turbo360-vertex.com
 
 # QUICK START
 
-### git clone https://github.com/kreppi92/angelcoins-frontend.git
-### yarn install
-### yarn start
+```
+git clone https://github.com/kreppi92/angelcoins-frontend.git
+yarn install
+yarn start
+```
