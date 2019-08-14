@@ -1,1 +1,4 @@
-export const SIMPLE_ACTION = "SIMPLE_ACTION"
+export const FETCH_DATA = "FETCH_DATA"
+export const SET_COMPANY = "SET_COMPANY"
+export const CHANGE_CURRENCY = "CHANGE_CURRENCY"
+export const TOGGLE_MODAL = "TOGGLE_MODAL"

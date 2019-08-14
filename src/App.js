@@ -1,27 +1,22 @@
-import React, { Component } from 'react';
+import React from "react";
+import "./App.css";
+import Dashboard from "./components/dashboard";
+import Ledger from "./components/ledger";
 import { Router, Route } from "react-router-dom";
 import { createBrowserHistory } from "history";
+import Header from "./components/elements/header";
 
-import Dashboard from './components/Dashboard'
-import Ledger from './components/Ledger'
+const App = () => {
+  const hist = createBrowserHistory();
+  return (
+    <div className="App">
+              <Header />
+      <Router history={hist}>
+        <Route exact path="/" component={Dashboard} />
+        <Route exact path="/ledger" component={Ledger} />
+      </Router>
+    </div>
+  );
+};
 
-import './App.css';
-
-
-
-class App extends Component {
-
-  render() {
-    const hist = createBrowserHistory();
-    return (
-      <div className="App">
-        <Router history={hist}>
-          <Route exact path='/' component={Dashboard} />
-          <Route exact path='/ledger' component={Ledger} />
-        </Router>
-      </div>
-    );
-  }
-}
-
-export default (App);
+export default App;
